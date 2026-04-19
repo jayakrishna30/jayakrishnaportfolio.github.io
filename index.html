@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Protfolio Website </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Protfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                            
+                       
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>AI & Machine Learning Student</p>
+                    <h1>Hi, I'm <span></span> Jayakrishna<br>From Hyderabad</h1>
+                </div>
+            </div>
+        </div>
+<!-- --------------about--------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png">
+                        </div>
+                    <div class="about-col-2">
+
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Final-year B.Tech student in Artificial Intelligence and Machine Learning at ACE Engineering College, Hyderabad.Interested in data analysis, machine learning, and software development, with a focus on solving real-world problems using technology. Skilled in Python, basic SQL, and analytics concepts.Worked on projects like an Intelligent Submarine Security System and a Weather Forecasting system, applying AI and data analysis techniques.Looking for an entry-level opportunity to gain practical experience and grow in the tech industry.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                            <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                            <p class="tab-links" onclick="opentab('technical-skills')">Technical Skills</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Data Visualization</span><br>Creating simple charts and graphs to represent data clearly</li>
+                                <li><span>Problem Solving</span><br>Breaking complex problems into smaller steps</li>
+                                <li><span>Analytical Thinking</span><br>Analyzing data to identify patterns and insights</li>
+                                <li><span>Logical Thinking</span><br>Thinking step-by-step to solve problems</li>
+                            </ul>
+                        </div>
+                         <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>AI Intern LLM Post-Training</span><br>Worked on post-training processes for Large Language Models</li>
+                                <li><span>Academic Projects</span><br>Intelligent Submarine Security System using AI concepts</li>
+                                <li><span>Academic Projects</span><br>Weather prediction system using data analysis</li>
+                                <li><span>Academic Projects</span><br>Intelligent Path Optimization to Extend EV Range</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022-2026</span><br>B.Tech in Artificial Intelligence & Machine Learning<br>ACE Engineering College, Hyderabad<br>CGPA: 7.17</li>
+                                <li><span>2020-2022</span><br>Intermediate (MPC)<br>Narayana Junior College, Hyderabad<br>Percentage: 76%</li>
+                                <li><span>2019-2020</span><br>Secondary School<br>Vidya Kiran High School, Hyderabad<br>CGPA: 9.3</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="certifications">
+                            <ul>
+                                <li><span><a href="certifications/eduskills.jpg" target="_blank" rel="noopener noreferrer">AI-ML Virtual Internship</a></span><br>Issued by: Indian Edu Program<br>Year: 2025</li>
+                                <li><span><a href="certifications/cisco.jpg" target="_blank" rel="noopener noreferrer">Cisco Networking Device and Initial Configuration</a></span><br>Issued by: Cisco Networking Academy<br>Year: December 2024</li>
+                                <li><span><a href="certifications/python essential 1.jpg" target="_blank" rel="noopener noreferrer">Python Essentials 1</a></span><br>Issued by: Cisco Networking Academy<br>Year: June 2025</li>
+                                <li><span><a href="certifications/python essential 2.jpg" target="_blank" rel="noopener noreferrer">Python Essentials 2</a></span><br>Issued by: Cisco Networking Academy<br>Year: June 2025</li>
+                                <li><span><a href="certifications/MePro.jpg" target="_blank" rel="noopener noreferrer">MePro Level 10 - English Certification</a></span><br>Issued by: Pearson<br>Year: May 2025</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="achievements">
+                            <ul>
+                                <li><span>AI Project Development</span><br>Successfully developed multiple AI-based projects including Submarine Security System and EV Path Optimization</li>
+                                <li><span>Coursework Completion</span><br>Completed AI & Machine Learning coursework with hands-on project experience</li>
+                                <li><span>Internship Exposure</span><br>Gained practical exposure through AI Internship in LLM Post-Training</li>
+                                <li><span>Python and Data Analysis</span><br>Built real-world solutions using Python and data analysis concepts</li>
+                                <li><span>Continuous Learning</span><br>Actively learning and applying machine learning techniques</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="technical-skills">
+                            <ul>
+                                <li><span>Programming Languages</span><br>Python (Basic to Intermediate)</li>
+                                <li><span>Database</span><br>SQL (Basic)</li>
+                                <li><span>Technologies / Concepts</span><br>Machine Learning, Data Analysis, Data Visualization</li>
+                                <li><span>Tools</span><br>Excel, Jupyter Notebook</li>
+                                <li><span>Core Skills</span><br>Problem Solving, Analytical Thinking, Logical Thinking</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <!-------------servics------------------- -->
+        <div id="services">
+            <div class="container">
+                <h1 class="'sub-title">My Services</h1> 
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Data Analysis & Insights</h2>
+                        <p>
+                           Analyze data to find patterns, trends, and useful insights.<br>Create simple reports and visualizations using Python and Excel. 
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>Basic Machine Learning Solutions</h2>
+                        <p>
+                            Build simple machine learning models for prediction and classification tasks.<br>Apply AI concepts to solve real-world problems.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>Python-Based Problem Solving</h2>
+                        <p>
+                            Develop Python solutions for automation, data processing, and logic-based problems.<br>Write clean and efficient code for practical applications.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!------------protfolio---------------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Intelligent Path Optimization to Extend EV Range</h3>
+                            <p>Developed a system to optimize travel paths for electric vehicles (EVs) to maximize battery efficiency and extend driving range.</p>
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>AI & ML Project Developer</h3>
+                            <p>Developed an Intelligent Submarine Security System using AI concepts</p>
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Weather Forecasting Project </h3>
+                            <p>Built a basic weather prediction system using data analysis</p>
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <!-- ------------contact--------------- -->
+         <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><span class="contact-icon">&#9993;</span> jayakrishna6301@gmail.com</p>
+                        <p><span class="contact-icon">&#9742;</span>+91 82971 71966</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/jayakrishna.yadav.984" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><span class="social-icon">f</span></a>
+                            <a href="https://www.instagram.com/jaya_krishna_30/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><span class="social-icon">&#9673;</span></a>
+                            <a href="https://www.linkedin.com/in/jaya-krishna-poshaboina" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="social-icon">in</span></a>
+                        </div>
+                        <a href="images/my-cv.pdf.pdf" download class="btn btn2">Download CV</a>
+                        </div>
+                        <div class="contact-right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="email" placeholder="Your Email">
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn ">Submit</button>
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Designed & Developed by Jayakrishna</p>
+            </div>
+
+         </div>
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right ="-200px";
+            }
+        </script>
+        <script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbxwKH6ybCNwclCxCxUeX9BEUN_-p_plMO92teMfAlZi1CklVOBZ-qArYF3Z8h81PfD7nA/exec'
+	const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+	form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => response.json())
+			.then(response => {
+                msg.innerHTML ="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML =""
+                },5000)
+                form.reset()
+            })
+			.catch(error => console.error('Error!', error.message))
+	})
+</script>
+    </body>
+
+</html>
